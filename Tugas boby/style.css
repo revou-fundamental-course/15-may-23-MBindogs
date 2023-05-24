@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header{
+    background-color: #3498db;
+    padding: 10px;
+}
+
+.header_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_text p b{
+    color: white;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.header_text p{
+    text-align: center;
+    color: #d5d4d4;
+}
+main{
+    background-color: white;
+    padding: 5px 10px;
+    margin: 20px 10px;
+    border-radius: 3px;
+}
+main p, main h1, h2{
+    text-align: center;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+.changeButton{
+    background: none;
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+	cursor: pointer;
+    color: #3379b7;
+    font-weight: bold;
+    border-color: white;
+}
+
+.changeButton-active{
+    background-color: #3379b7;
+    color: white;
+}
+.title{
+    background-color: #2880b9;
+    text-align: center;
+    padding: 1px 0;
+    margin-bottom: 5px;
+    color: white;
+}
+.content{
+    display: none;
+}
+.content-active{
+    display: inherit;
+    transition: 0.5s;
+    border: solid #2880b9 1px;
+}
+img{
+    display: block;
+    width: 20%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Luas, .hitung, .Keliling{
+    padding: 0 15px;
+}
+hr{
+    margin-top: 30px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.form input{
+    width: 100%;
+}
+button{
+    background-color: #3379b7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reset button{
+    background-color: #efad4e;
+}
+.reset{
+    text-align: right;
+}
+
+

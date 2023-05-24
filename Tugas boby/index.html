@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header_text">
+            <p><b>Katik</b>Kalkulator Matematik</p>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, Selamat datang di Katik :]
+        <br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <div class="button">
+            <button class="changeButton changeButton-active">Persegi</button>
+            <button class="changeButton">P.Panjang</button>
+        </div>
+        <div class="content content-active">
+            <div class="Persegi">
+                <div class="title">
+                    <h2>Luas Persegi</h2>
+                </div>
+                <div class="Luas">
+                    <img src="assets/bujur-sangkar-removebg-preview.png">
+                    <br>Rumus Luas Persegi yaitu :
+                    <p><b>L = S x S</b></p>
+                    Di mana :<br>
+                    L = Luas <br>
+                    S = Sisi <br>
+                    <hr>
+                </div>
+                <div class="hitung">
+                    <h2>Hitung Luas Persegi</h2>
+                    <div class="form">
+                        <input type="number" id="sisi-luas" name="sisi-luas" placeholder="Nilai Sisi">
+                        <button onclick="hitung_luas()" name="hitung-luas">Hitung</button>
+                    </div>
+                    <div id="output_luas"></div>
+                    <p class="reset"><button onclick="reset()">Reset</button></p>
+                </div>
+                <div class="title">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <div class="Keliling">
+                    <img src="assets/bujur-sangkar-removebg-preview.png">
+                    <br>Rumus Keliling Persegi yaitu :
+                    <p><b>K = 4 x S</b></p>
+                    Di mana :<br>
+                    K = Keliling <br>
+                    S = Sisi <br>
+                    <hr>
+                </div>
+                <div class="hitung">
+                    <h2>Hitung Keliling Persegi</h2>
+                    <div class="form">
+                        <input type="number" id="sisi-keliling" name="sisi-keliling" placeholder="Nilai Sisi">
+                        <button onclick="hitung_keliling()" name="hitung-keliling">Hitung</button>
+                    </div>
+                    <div id="output_keliling"></div>
+                    <p class="reset"><button onclick="reset2()">Reset</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="Persegi-panjang">
+                <div class="title">
+                    <h2>Luas Persegi Panjang</h2>
+                </div>
+                <div class="Luas">
+                    <img src="Assets/image-removebg-preview (4).png">
+                    <br>Rumus Luas Persegi Panjang yaitu :
+                    <p><b>L = p x l</b></p>
+                    Di mana :<br>
+                    L = Luas <br>
+                    p = Panjang <br>
+                    l = lebar <br>
+                <div class="title">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <div class="Keliling">
+                    <img src="Assets/image-removebg-preview (4).png">
+                    <br>Rumus Keliling Persegi Panjang yaitu :
+                    <p><b>K = 2(p + l)</b></p>
+                    Di mana :<br>
+                    K = Keliling <br>
+                    p = Panjang <br>
+                    l = lebar <br>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
